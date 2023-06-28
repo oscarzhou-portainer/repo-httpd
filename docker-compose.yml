@@ -4,5 +4,7 @@ services:
   httpd-container:
     image: httpd:latest
     container_name: httpd-test-container
+    labels:
+      - "custom-version: 1"
     ports:
       - "7077:80"
