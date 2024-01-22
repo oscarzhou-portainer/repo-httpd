@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  httpd-container:
+    image: oscarzhou/nginx-test:1
+    container_name: nginx-hello
+    labels: 
+      - "version=10"
+    ports:
+      - "${PORT:-5567}:80"
