@@ -2,7 +2,7 @@ version: '3'
 
 services:
   httpd-container:
-    image: oscarzhou/nginx-test:1
+    image: oscarzhou/nginx-hello:1
     container_name: nginx-hello
     labels: 
       - "version=10"
