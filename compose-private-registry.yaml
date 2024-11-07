@@ -1,0 +1,11 @@
+
+version: '3'
+
+services:
+  httpd-container:
+    image: registry.internal.services.oscarchou.com/httpd:latest
+    container_name: httpd-test-container
+    labels:
+      - "version=2"
+    ports:
+      - "${PORT:-8082}:80"
